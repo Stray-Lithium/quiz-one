@@ -1,20 +1,31 @@
-function addTwoNumbers() {
+function addTwoNumbers(numOne, numTwo) {
   // Add two numbers together
-}
+  return numOne + numTwo;
+};
 
-function minusTwoNumbers() {
+function minusTwoNumbers(numOne, numTwo) {
   // Minus two numbers
-}
+  return numOne - numTwo;
+};
 
-function multiplyTwoNumbers() {
+function multiplyTwoNumbers(numOne, numTwo) {
   // Multiply two numbers
-}
+  return numOne * numTwo;
+};
 
-function devideTwoNumbers() {
+function devideTwoNumbers(numOne, numTwo) {
+  return numOne / numTwo;
   // Devide two numbers
-}
+};
 
-function evenOrOdd() {
+function evenOrOdd(number) {
+// if (number % 2 === 0) {
+//   return true;
+// } else { 
+//   return false;
+// };
+return number % 2 === 0 //? true : false 
+//console.log("The number is even.");
   // Given a number
   // Work out if number is even or odd
 }

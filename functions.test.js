@@ -35,16 +35,16 @@ describe('Basic number questions', () => {
 });
 
 describe('Basic String questions', () => {
-  test('Return greeting', () => {
+  test.only('Return greeting', () => {
     expect(greeting('Nathan')).toBe('Hello, my name is Nathan');
   });
-  test('Return first letter of a name', () => {
+  test.only('Return first letter of a name', () => {
     expect(getFirstLetter('Nathan')).toBe('N');
   });
-  test('Return initials of a full name', () => {
+  test.only('Return initials of a full name', () => {
     expect(getInitials('Nathan', 'Masters')).toBe('NM');
   });
-  test('Return true if the text contains the word "sausage"', () => {
+  test.only('Return true if the text contains the word "sausage"', () => {
     expect(
       isThereASausage(
         'I do not contain the word sausage, please look elsewhere.'
