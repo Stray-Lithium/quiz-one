@@ -39,6 +39,10 @@ function getFirstLetter(first) {
   return string.charAt(0);
   // Given a name
   // Return the first letter of a name
+  
+  // So in this function try using the index of the string to get the answer
+  // returning first[0] will give us what we want here
+  // you see you can just use [] to access a position of a letter
 }
 
 function getInitials(first) 
@@ -50,10 +54,18 @@ function getInitials(first)
         initials += names[names.length - 1].substring(0, 1).toUpperCase();
     }
     return initials;
+    
+    // Here we can use the index again, if we are given 'Nathan Masters' or we are given 'Egg Eggybread'
+    // Given the two examples above we would want the index of 0 and 7 for my name 0 and 4 for the Egg name
+    // FIRST INITIAL - always fullName[0] 
+    // SECOND INITIAL - always the one after the space, something like fullName[fullName.indexOf(' ') + 1]
+    // You see how this works for both examples now?
 };
+
   // Given a full name
   // Return the initials
   // Only able to pull N
+
 
 function isThereASausage(sample) 
  {
@@ -63,7 +75,7 @@ return result
  };
 
 //need to be shown what I messed up^^
-//
+// This solution works so its passing the tests for me so this is fine :P
 
 function turnStringIntoNumber(x) {
   var x = Number("1000")
