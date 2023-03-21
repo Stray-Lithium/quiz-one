@@ -19,43 +19,64 @@ function devideTwoNumbers(numOne, numTwo) {
 };
 
 function evenOrOdd(number) {
-// if (number % 2 === 0) {
-//   return true;
-// } else { 
-//   return false;
-// };
-return number % 2 === 0 //? true : false 
+if (number % 2 === 0) {
+ return true;
+} else { 
+return false;
+};
+//return number % 2 === 0 ? true : false 
 //console.log("The number is even.");
   // Given a number
   // Work out if number is even or odd
 }
 
-function greeting() {
-  // Given a name
-  // Return "Hello, my name is [insert_name]"
+function greeting(name) {
+  return `Hello, my name is ${name}`;
 }
 
-function getFirstLetter() {
+function getFirstLetter(first) {
+  var string = first;
+  return string.charAt(0);
   // Given a name
   // Return the first letter of a name
 }
 
-function getInitials() {
+function getInitials(first) 
+  {
+    var names = first.split(' '),
+        initials = names[0].substring(0, 1).toUpperCase();
+    
+    if (names.length > 1) {
+        initials += names[names.length - 1].substring(0, 1).toUpperCase();
+    }
+    return initials;
+};
   // Given a full name
   // Return the initials
-}
+  // Only able to pull N
 
-function isThereASausage() {
-  // Given some text
-  // Return true if the text contains the word 'sausage'
-}
+function isThereASausage(sample) 
+ {
+let text = sample;
+let result = text.includes("sausage");
+return result
+ };
 
-function turnStringIntoNumber() {
+//need to be shown what I messed up^^
+//
+
+function turnStringIntoNumber(x) {
+  var x = Number("1000")
+  return x
   // Given a number in the form of a string
   // Return a number
 }
+                               
+function turnNumberIntoString(three) {
+let num = 3;
+let text = num.toString(2);
+return text
 
-function turnNumberIntoString() {
   // Given a string of a number
   // Return a string
 }
