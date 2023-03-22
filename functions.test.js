@@ -14,7 +14,7 @@ const {
 } = require('./functions');
 
 describe('Basic number questions', () => {
-  test('Adds two numbers together', () => {
+  test.only('Adds two numbers together', () => {
     expect(addTwoNumbers(1, 2)).toBe(3);
   });
   test('Minuses two numbers together', () => {
@@ -41,7 +41,7 @@ describe('Basic String questions', () => {
   test('Return first letter of a name', () => {
     expect(getFirstLetter('Nathan')).toBe('N');
   });
-  test.only('Return initials of a full name', () => {
+  test('Return initials of a full name', () => {
     expect(getInitials('Nathan', 'Masters')).toBe('NM');
   });
   test('Return true if the text contains the word "sausage"', () => {
