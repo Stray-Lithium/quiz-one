@@ -35,8 +35,8 @@ function greeting(name) {
 }
 
 function getFirstLetter(first) {
-  var string = first;
-  return string.charAt(0);
+  return first[0];
+  
   // Given a name
   // Return the first letter of a name
   
@@ -45,16 +45,10 @@ function getFirstLetter(first) {
   // you see you can just use [] to access a position of a letter
 }
 
-function getInitials(first) 
-  {
-    var names = first.split(' '),
-        initials = names[0].substring(0, 1).toUpperCase();
-    
-    if (names.length > 1) {
-        initials += names[names.length - 1].substring(0, 1).toUpperCase();
-    }
-    return initials;
-    
+function getInitials(test, poo) 
+  {  
+return test[0] + poo[poo.indexOf(' ') + 1]
+
     // Here we can use the index again, if we are given 'Nathan Masters' or we are given 'Egg Eggybread'
     // Given the two examples above we would want the index of 0 and 7 for my name 0 and 4 for the Egg name
     // FIRST INITIAL - always fullName[0] 
@@ -73,9 +67,6 @@ let text = sample;
 let result = text.includes("sausage");
 return result
  };
-
-//need to be shown what I messed up^^
-// This solution works so its passing the tests for me so this is fine :P
 
 function turnStringIntoNumber(x) {
   var x = Number("1000")

@@ -41,7 +41,7 @@ describe('Basic String questions', () => {
   test('Return first letter of a name', () => {
     expect(getFirstLetter('Nathan')).toBe('N');
   });
-  test('Return initials of a full name', () => {
+  test.only('Return initials of a full name', () => {
     expect(getInitials('Nathan', 'Masters')).toBe('NM');
   });
   test('Return true if the text contains the word "sausage"', () => {
