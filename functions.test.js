@@ -14,7 +14,7 @@ const {
 } = require('./functions');
 
 describe('Basic number questions', () => {
-  test.only('Adds two numbers together', () => {
+  test('Adds two numbers together', () => {
     expect(addTwoNumbers(1, 2)).toBe(3);
   });
   test('Minuses two numbers together', () => {
