@@ -42,7 +42,7 @@ describe('Basic String questions', () => {
     expect(getFirstLetter('Nathan')).toBe('N');
   });
   test('Return initials of a full name', () => {
-    expect(getInitials('Nathan', 'Masters')).toBe('NM');
+    expect(getInitials('Nathan Masters')).toBe('NM');
   });
   test('Return true if the text contains the word "sausage"', () => {
     expect(
@@ -52,9 +52,9 @@ describe('Basic String questions', () => {
     ).toBe(true);
   });
   test('Turn a string into a number', () => {
-    expect(turnStringIntoNumber('3')).toEqual(expect.any(Number));
+    expect(turnStringIntoNumber('3')).toBe(3);
   });
   test('Turn a number into a string', () => {
-    expect(turnNumberIntoString(3)).toEqual(expect.any(String));
+    expect(turnNumberIntoString(3)).toBe('3');
   });
 });
